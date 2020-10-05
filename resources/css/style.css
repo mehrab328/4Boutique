@@ -17,27 +17,110 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.blocks {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 20px;
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 
+/*---------------------*/
+/* SIDEBAR */
+/*---------------------*/
 
-.first-box {
-    background-color: #9999;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    
+.sidenav {
+  width: 260px;
+  height: 100%;
+  float: left;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.home a {
+  color: #c8a985;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #999999;
+  font-size: 25px;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #000000;
+  transition: 0.2s;
+}
+
+.home a:hover {
+  color: #9f7748;
+  transition: 0.2s;
+}
+
+/*---------------------*/
+/* GRID */
+/*---------------------*/
+
+.box1 {
+  background-color: #999999;
+  grid-area: item1;
+}
+
+.box2 {
+  background-color: #c8a985;
+  grid-area: item2;
+}
+
+.box3 {
+  background-color: #f0e3cc;
+  grid-area: item3;
+}
+
+.box4 {
+  background-color: #cccccc;
+  grid-area: item4;
+}
+
+.box5 {
+  background-color: #f2f2f2;
+  grid-area: item5;
+}
+
+.box6 {
+  background-color: #cccccc;
+  grid-area: item6;
+}
+
+.container {
+  margin: 0;
+  float: right;
+  width: auto;
+  height: 100vh;
+  display: grid;
+  background-color: #000000;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 30px;
+  grid-template-areas:
+  "item1 item1 item1 item1 item1 item2 item2 item2 item2"
+  "item1 item1 item1 item1 item1 item2 item2 item2 item2"
+  "item1 item1 item1 item1 item1 item3 item3 item3 item3"
+  "item1 item1 item1 item1 item1 item3 item3 item3 item3"
+  "item4 item4 item4 item5 item5 item5 item6 item6 item6"
+  "item4 item4 item4 item5 item5 item5 item6 item6 item6"
+  "item4 item4 item4 item5 item5 item5 item6 item6 item6";
 }
 
 .inside-component {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
