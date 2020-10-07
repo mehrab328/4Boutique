@@ -17,10 +17,76 @@
 
 <body>
 
+    <div id="myNav" class="overlay">
+        <div class="container row mobile-header">
+            <div class="col-3">
+                <a href="javascript:void(0)" class="closebtn" style="font-size: 40px;" onclick="closeNav()">&times;</a>
+            </div>
+            <div class="col-6">
+                <img src="vendors/img/logo-beige.png" alt="logo">
+            </div>
+            <div class="col-3">
+                <i class="fa fa-search fa-lg"></i>
+            </div>
+        </div>
+        <div class="container row mobile-user-tool">
+            <div class="col-4">
+                <span><i class="fa fa-lock fa-lg"></i></span>
+            </div>
+            <div class="col-4">
+                <span><i class="fa fa-shopping-bag fa-lg"></i></span>
+            </div>
+            <div class="col-4">
+                <span><i class="fa fa-heart-o fa-lg"></i></span>
+            </div>
+        </div>
+        <div class="container nav">
+            <ul>
+                <li><a href="#" style="color: #C8A985;">HOME</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#">READY TO WEAR</a></li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">DESIGNERS</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#">LOOKBOOK</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="container links">
+            <label for="language">LANGUAGE</label>
+            <select id="language">
+                <option value="english">ENGLISH</option>
+            <select><br>
+            <a href="#">STORE LOCATOR</a>
+        </div>
+        <div class="container newsletter">
+            <label for="email">NEWSLETTER</label>
+            <div class="input-container">
+                <input type="text" class="input-field" id="email" placeholder="Email">
+                <button class="input-button">&rarr;</button>
+            </div>
+        </div>
+        <div class="container social">
+            <img src="vendors/img/Icon facebook.png" class="icons-social">
+            <img src="vendors/img/Icon twitter.png" class="icons-social">
+            <img src="vendors/img/Icon google plus.png" class="icons-social">
+            <img src="vendors/img/Icon tumblr.png" class="icons-social">
+        </div>
+
+
+    </div>
+
+
+
+
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <div class="col-3">
-                <span style="margin-right: 5px;"><i class="fa fa-bars fa-lg"></i></span>
+                <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
                 <span><i class="fa fa-search fa-lg"></i></span>
             </div>
             <div class="col-6" style="text-align: center;">
@@ -45,6 +111,7 @@
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
         integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
         crossorigin="anonymous"></script>
+    <script src="resources/js/script.js"></script>
 </body>
 
 
