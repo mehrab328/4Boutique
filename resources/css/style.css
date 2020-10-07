@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .row-header {
   margin: 0px auto;
   padding: 0px 0px;
@@ -28,7 +33,40 @@
 
 /* Mobile Header */
 .mobile-header {
-  margin: 12px auto;
+  height: 5%;
+  margin: 15px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+/* Mobile User Tool Section */
+.mobile-user-tool {
+  height: 16%;
+  margin: 15px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  color: #E2E2E2;
+}
+
+.mobile-user-tool div {
+  padding: 30px 0 0 0;
+  background-color: #333333;
+  border: 1px solid #4D4D4D;
+}
+
+.mobile-user-tool i { font-size: 35px;}
+.mobile-user-tool p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+
+/* Navigation links */
+.nav,
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav li {
@@ -36,16 +74,27 @@
   text-align: center;
 }
 
-.nav a {
+.nav li a {
   text-decoration: none;
+  text-align: center;
   color: #ffffff;
   display: block;
 }
 
+.links,
+.newsletter {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+
 
 .input-container{
-  width: 250px;
-  border: 1px solid #a9a9a9;
+  width: auto;
+  text-align: center;
+  border: 1px solid #cccccc;
   display: inline-block;
 }
 .input-container input:focus, .input-container input:active {
@@ -54,8 +103,20 @@
 .input-container input {
   width: 80%;
   border: none;
+  color: #999999;
+  background-color: #000000;
 }
 
 .input-container button {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px;
+  border: 0px;
   float: right;
+  background-color: #cccccc;
+}
+
+.icons-social {
+  width: 28px;
+  height: 28px;
+  text-align: center;
 }
