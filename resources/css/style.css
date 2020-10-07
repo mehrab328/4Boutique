@@ -1,6 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
+/* Default CSS by mehrab bhai*/
+
+html,
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  height: 100vh;
+}
+
+
+.row {
+  max-width: 1140px;
 }
 
 .row-header {
@@ -12,111 +23,132 @@
   margin: 0px auto;
   padding: 50px 0px;
   border-bottom: 1px ridge;
-  min-height: 400px;
+  max-height: 400px;
 }
 
+/* -------------------------- */ 
+/*---------NAVBAR------------- */
+/* -------------------------- */ 
 
-
-/*----------OVERLAY NAVIGATION MENU----------*/
-
-.overlay {
-  height: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 1100;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  overflow-x: hidden;
-  transition: 0.5s;
+.navbar-back {
+  background-color: #fff;
 }
 
-/* Mobile Header */
-.mobile-header {
-  height: 5%;
-  margin: 15px 0px;
-  padding: 0px 0px 0px 0px;
-  text-align: center;
-}
-
-/* Mobile User Tool Section */
-.mobile-user-tool {
-  height: 16%;
-  margin: 15px 0px;
-  padding: 0px 0px 0px 0px;
-  text-align: center;
-  color: #E2E2E2;
-}
-
-.mobile-user-tool div {
-  padding: 30px 0 0 0;
+.navbar-landing {
   background-color: #333333;
-  border: 1px solid #4D4D4D;
+  color: #fff;
 }
 
-.mobile-user-tool i { font-size: 35px;}
-.mobile-user-tool p {
-  font-size: 15px;
-  padding-top: 10px;
-}
+/* -------------------------- */ 
+/*---------BOXES------------- */
+/* -------------------------- */ 
 
-
-/* Navigation links */
-.nav,
-.social {
-  display: flex;
-  justify-content: center;
+.first-box {
+  background-color: #999;
   align-items: center;
 }
 
-.nav li {
-  list-style: none;
-  text-align: center;
-}
-
-.nav li a {
-  text-decoration: none;
-  text-align: center;
-  color: #ffffff;
-  display: block;
-}
-
-.links,
-.newsletter {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
-}
-
-
-
-.input-container{
+#inside-first-box {
   width: auto;
+  margin: auto;
+  padding: auto;
   text-align: center;
-  border: 1px solid #cccccc;
+  color: white;
+}
+
+.second-box {
+  background-color: #c8a985;
+  height: 151px;
+}
+
+#inside-second-box {
+
+}
+
+.third-box {
+  background-color: #f0e3cc;
+}
+
+.fourth-box {
+  background-color: #ccc;
+}
+
+.fifth-box {
+  background-color: #f2f2f2;
+}
+
+.sixth-box {
+  background-color: #ccc;
+}
+
+
+/* --------------------------- */
+/* ----------FOOTER----------- */
+/* --------------------------- */
+
+.footer {
+  font-size: 80%;
+}
+
+#foot-links {
+  display: flex;
+  justify-content: center;
+}
+
+.list-unstyled li {
   display: inline-block;
-}
-.input-container input:focus, .input-container input:active {
-  outline: none;
-}
-.input-container input {
-  width: 80%;
-  border: none;
-  color: #999999;
-  background-color: #000000;
+  margin-right: 5px;
 }
 
-.input-container button {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 5px;
-  border: 0px;
-  float: right;
-  background-color: #cccccc;
+.list-unstyled li a {
+  color: #c8a985;
 }
 
-.icons-social {
-  width: 28px;
-  height: 28px;
-  text-align: center;
+
+/* landing page mobile */
+
+.full-body {
+    background-color: #333333;
+}
+
+.hero-text {
+    color: #fff;
+}
+
+.hero-box {
+/*
+    height: 128px;
+    width: 217px;
+*/
+    text-align: center;
+    padding: 277px 51.5px 200px 51.5px;
+/*
+    left: 51.5px;
+    top: 277px;
+    border-radius: 0px;
+*/
+}
+
+.carousel-indicators li {
+    position: relative;
+    flex: 0 1 auto;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: #fff;
+}
+
+.carousel-indicators .active {
+  background-color: #333333;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+}
+
+.btn-outline-primary.btn-landing {
+  color: #fff;
+  border: 1px solid #fff;
 }
