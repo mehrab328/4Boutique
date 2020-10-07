@@ -1,9 +1,98 @@
+html,
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  height: 100vh;
+}
+
+.row {
+  max-width: 1140px;
+}
+
 .row-header {
   margin: 0px auto;
-  padding: 0px 0px; }
+  padding: 0px 0px;
+}
 
 .row-content {
   margin: 0px auto;
   padding: 50px 0px;
   border-bottom: 1px ridge;
-  min-height: 400px; }
+  max-height: 400px;
+}
+
+/* -------------------------- */ 
+/*---------NAVBAR------------- */
+/* -------------------------- */ 
+
+.navbar-back {
+  background-color: #fff;
+}
+
+
+/* -------------------------- */ 
+/*---------BOXES------------- */
+/* -------------------------- */ 
+
+.first-box {
+  background-color: #999;
+  align-items: center;
+}
+
+#inside-first-box {
+  width: auto;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  color: white;
+}
+
+.second-box {
+  background-color: #c8a985;
+  height: 151px;
+}
+
+#inside-second-box {
+
+}
+
+.third-box {
+  background-color: #f0e3cc;
+}
+
+.fourth-box {
+  background-color: #ccc;
+}
+
+.fifth-box {
+  background-color: #f2f2f2;
+}
+
+.sixth-box {
+  background-color: #ccc;
+}
+
+
+/* --------------------------- */
+/* ----------FOOTER----------- */
+/* --------------------------- */
+
+.footer {
+  font-size: 80%;
+}
+
+#foot-links {
+  display: flex;
+  justify-content: center;
+}
+
+.list-unstyled li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.list-unstyled li a {
+  color: #c8a985;
+}
