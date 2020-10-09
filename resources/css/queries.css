@@ -1,0 +1,64 @@
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: 13px;
+  }
+
+  .first-box,
+  .second-box,
+  .third-box,
+  .fourth-box,
+  .fifth-box,
+  .sixth-box {
+    margin-bottom: 2px;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  .half-row {
+      padding: 0;
+  }
+
+  .first-box {
+      height: 228px;
+  }
+
+  
+
+  #inside-second-box h2,
+  #inside-third-box h2 {
+    font-size: 20px;
+  }
+
+  .footers-line {
+    display: block;
+    text-align: center;
+  }
+
+  .list-unstyled li a {
+      font-size: 55%;
+  }
+
+  .copyright {
+      font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (max-width: 1439px) {
+
+  .half-row {
+    padding-right: 0;
+  }
+  
+  .foot-links {
+    float: right;
+  }
+
+  .copyright {
+    float: left;
+  }
+}
