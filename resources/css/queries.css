@@ -1,11 +1,14 @@
 @media only screen and (max-width: 1024px) {
+
   .container {
     max-width: none;
-    width: 100vw;
+    width: 100%;
     padding: 0 30px;
   }
+
   .half-row {
     padding-right: 0;
+    padding-left: 31px;
   }
 
   h2 {
@@ -97,7 +100,137 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+  .container {
+    max-width: none;
+    width: 100%;
+    padding: 0 0;
+  }
+
+  body {
+    padding-top: 0;
+  }
+
+  .half-row {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .first-box h2 {
+    font-size: 24px;
+  }
+
+  .first-box {
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid 1px #fff;
+  }
+
+  .second-box {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0 0 0;
+    border: solid 1px #fff;
+  }
+
+  #inside-second-box {
+    width: 43.75%;
+    margin-left: 22px;
+  }
+
+  .third-box {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    border: solid 1px #fff;
+  }
+
+  #inside-third-box {
+    width: 43.75%;
+    margin-right: 18px;
+  }
+
+  .fourth-box {
+    height: 284px;
+    margin: 0 0 0 0;
+    border: solid 1px #fff;
+  }
+
+  .fifth-box {
+    height: 284px;
+    margin: 0 0 0 0;
+    border: solid 1px #fff;
+  }
+
+  .sixth-box {
+    height: 284px;
+    margin: 0 0 0 0;
+    border: solid 1px #fff;
+  }
+
+  .sixth-box h2 {
+    width: 80%;
+  }
+
+  /* --------- FOOTERS ---------- */
+
+  #hr-line {
+    margin: 12px 0 10px 0;
+  }
+
+  .footers-line {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .list-unstyled li a {
+    font-size: 10px;
+    justify-content: flex-end;
+  }
+
+  .copyright {
+    font-size: 10px;
+    justify-content: flex-start;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 575px) {
+
+  .container {
+    max-width: none;
+    width: 100%;
+    padding: 0 0;
+  }
+
   body {
     padding-top: 13px;
   }
@@ -105,11 +238,12 @@
   /* --------- BOXES ---------- */
 
   h2 {
-    font-size: 120%;
+    font-size: 24px;
   }
 
   .half-row {
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   #inside-second-box h2,
@@ -119,7 +253,7 @@
 
   .first-box {
     height: 228px;
-    margin: 0 0 2px 0;
+    margin: 0 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,11 +264,12 @@
     margin-right: auto;
     margin-left: auto;
     width: 76%;
+    font-size: 24px;
   }
 
   .second-box {
     height: 151px;
-    margin: 0 0 2px 0;
+    margin: 0 0 0 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -148,7 +283,7 @@
 
   .third-box {
     height: 151px;
-    margin: 0 0 2px 0;
+    margin: 0 0 0 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -164,7 +299,7 @@
   .fifth-box,
   .sixth-box {
     height: 297px;
-    margin: 0 0 2px 0;
+    margin: 0 0 0 0;
   }
 
   .back-to-top {
