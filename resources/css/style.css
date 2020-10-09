@@ -7,7 +7,6 @@
   padding: 0;
 }
 
-
 /* .row-header {
   margin: 0px auto;
   padding: 0px 0px;
@@ -33,7 +32,6 @@ h2 {
   font-weight: 100;
 }
 
-
 /* -------------------------- */
 /*---------NAVBAR------------- */
 /* -------------------------- */
@@ -48,14 +46,10 @@ h2 {
 
 .first-box {
   background-color: #999;
-}
-
-#inside-first-box {
-  width: 76%;
   color: #fff;
 }
 
-#inside-first-box button {
+.first-box button {
   background-color: #999;
   border: solid 1px #ffffff;
   color: #fff;
@@ -66,12 +60,7 @@ h2 {
   background-color: #c8a985;
   height: 50%;
   width: 100%;
-}
-
-#inside-second-box {
-  width: 60%;
-  color: white;
-  font-size: 120%;
+  color: #fff;
 }
 
 #inside-second-box button {
@@ -85,12 +74,7 @@ h2 {
   background-color: #f0e3cc;
   height: 50%;
   width: 100%;
-}
-
-#inside-third-box {
-  width: 60%;
-  color: white;
-  font-size: 120%;
+  color: #fff;
 }
 
 #inside-third-box button {
@@ -102,15 +86,36 @@ h2 {
 
 .fourth-box {
   background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
 }
 
 .fifth-box {
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
 }
 
 .sixth-box {
   background-color: #ccc;
-} 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.fourth-box h2,
+.fifth-box h2,
+.sixth-box h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /* --------------------------- */
 /* ----------FOOTER----------- */

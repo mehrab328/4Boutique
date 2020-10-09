@@ -1,35 +1,180 @@
-@media only screen and (max-width: 767px) {
-  body {
-    padding-top: 13px;
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: none;
+    width: 100vw;
+    padding: 0 30px;
   }
-
-  .first-box,
-  .second-box,
-  .third-box,
-  .fourth-box,
-  .fifth-box,
-  .sixth-box {
-    margin-bottom: 2px;
+  .half-row {
+    padding-right: 0;
   }
 
   h2 {
     font-size: 120%;
   }
 
-  .half-row {
-      padding: 0;
+  .first-box h2 {
+    font-size: 140%;
   }
 
   .first-box {
-      height: 228px;
+    height: 392px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
-  
+  #inside-first-box {
+    width: 52%;
+  }
+
+  .second-box {
+    height: 181px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+
+  #inside-second-box {
+    width: 43.75%;
+    margin-left: 22px;
+  }
+
+  .third-box {
+    height: 181px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+  }
+
+  #inside-third-box {
+    width: 43.75%;
+    margin-right: 18px;
+  }
+
+  .fourth-box {
+    height: 284px;
+    margin: 30px 30px 30px 0;
+  }
+
+  .fifth-box {
+    height: 284px;
+    margin: 30px 30px 30px 0;
+  }
+
+  .sixth-box {
+    height: 284px;
+    margin: 30px 0 30px 0;
+  }
+
+  .sixth-box h2 {
+    width: 80%;
+  }
+
+  /* --------- FOOTERS ---------- */
+
+  #hr-line {
+    margin: 0;
+  }
+
+  .footers-line {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .list-unstyled li a {
+    font-size: 50%;
+    justify-content: flex-end;
+  }
+
+  .copyright {
+    font-size: 50%;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding-top: 13px;
+  }
+
+  /* --------- BOXES ---------- */
+
+  h2 {
+    font-size: 120%;
+  }
+
+  .half-row {
+    padding: 0;
+  }
 
   #inside-second-box h2,
   #inside-third-box h2 {
     font-size: 20px;
   }
+
+  .first-box {
+    height: 228px;
+    margin: 0 0 2px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .first-box h2 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 76%;
+  }
+
+  .second-box {
+    height: 151px;
+    margin: 0 0 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  #inside-second-box {
+    width: 43.75%;
+    margin-left: 27px;
+  }
+
+  .third-box {
+    height: 151px;
+    margin: 0 0 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+  }
+
+  #inside-third-box {
+    width: 43.75%;
+    margin-right: 23px;
+  }
+
+  .fourth-box,
+  .fifth-box,
+  .sixth-box {
+    height: 297px;
+    margin: 0 0 2px 0;
+  }
+
+  .back-to-top {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  /* --------- FOOTERS ---------- */
 
   .footers-line {
     display: block;
@@ -37,28 +182,10 @@
   }
 
   .list-unstyled li a {
-      font-size: 55%;
+    font-size: 55%;
   }
 
   .copyright {
-      font-size: 50%;
-  }
-}
-
-@media only screen and (max-width: 1023px) {
-}
-
-@media only screen and (max-width: 1439px) {
-
-  .half-row {
-    padding-right: 0;
-  }
-  
-  .foot-links {
-    float: right;
-  }
-
-  .copyright {
-    float: left;
+    font-size: 50%;
   }
 }
