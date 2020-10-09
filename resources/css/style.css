@@ -18,6 +18,15 @@
 }
 
 /*-------------------------------------------*/
+/*----------Animations----------*/
+/*-------------------------------------------*/
+.grow:hover {
+  transform: scale(2.0);
+  -ms-transform: scale(2.0);
+  -webkit-transform: scale(2.0);
+}
+
+/*-------------------------------------------*/
 /*----------OVERLAY NAVIGATION MENU----------*/
 /*-------------------------------------------*/
 .overlay {
@@ -36,20 +45,20 @@
 .mobile-header {
   height: 5%;
   margin: 10px 0px;
-  padding: 10px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
 }
 
 /* Mobile User Tool Section */
 .mobile-user-tool {
   height: 16%;
-  margin: 15px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   text-align: center;
   color: #e2e2e2;
 }
 
 .mobile-user-tool div {
-  padding: 30px 0 0 0;
+  padding: 25px 0 0 0;
   background-color: #333333;
   border: 1px solid #4d4d4d;
 }

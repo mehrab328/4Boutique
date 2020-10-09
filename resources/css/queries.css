@@ -1,8 +1,8 @@
-/*----------PHONES----------*
-@media only screen and (max-width: 767px) {
-    
-    
-}*/
+/*----------TABLET LANDSCAPE----------*/
+@media only screen and (max-width: 1199px) {
+
+
+}
 
 /*----------TABLET PORTRAIT----------*/
 @media only screen and (max-width: 1023px) {
@@ -30,8 +30,34 @@
   }
 }
 
-/*----------TABLET LANDSCAPE----------*/
-@media only screen and (max-width: 1199px) {
+/*----------PHONES----------*/
+@media only screen and (max-width: 767px) {
+  .mobile-header {
+    padding: 10px 0px 0px 0px;
+  }
 
+  .nav {
+    padding: 25px 0px 0px 0px;
+    font-size: 16px;
+  }
 
+  .links {
+    padding: 35px 0px 0px 0px;
+  }
+
+  .newsletter {
+    padding: 17px 0px 0px 0px;
+  }
+
+  .social {
+    padding: 10px 0px 12px 0px;
+  }
+
+  .links,
+  .newsletter,
+  .social {
+    font-size: 12px;
+  }
+    
 }
+
