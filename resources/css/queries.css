@@ -1,23 +1,37 @@
-/*----------PHONES----------*/
+/*----------PHONES----------*
 @media only screen and (max-width: 767px) {
     
     
-}
+}*/
 
 /*----------TABLET PORTRAIT----------*/
-@media only screen and (min-width: 768px) {
-    
-    
+@media only screen and (max-width: 1023px) {
+  .nav {
+    padding: 130px 0px 0px 0px;
+    font-size: 24px;
+  }
+
+  .links {
+    padding: 180px 0px 0px 0px;
+  }
+
+  .newsletter {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .social {
+    padding: 15px 0px 20px 0px;
+  }
+
+  .links,
+  .newsletter,
+  .social {
+    font-size: 12px;
+  }
 }
 
 /*----------TABLET LANDSCAPE----------*/
-@media only screen and (min-width: 1024px) {
-    
-    
-}
+@media only screen and (max-width: 1199px) {
 
-/*----------DESKTOP HD----------*/
-@media only screen and (min-width: 1440px) {
-    
-    
+
 }
