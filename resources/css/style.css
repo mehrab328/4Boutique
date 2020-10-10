@@ -1,99 +1,222 @@
-/* Default CSS by mehrab bhai*/
-
-html,
-body {
-  background-color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
-  height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
-.row {
-  max-width: 1140px;
+.no-padding {
+  padding: 0;
 }
 
-.row-header {
+/* .row-header {
   margin: 0px auto;
   padding: 0px 0px;
 }
 
 .row-content {
   margin: 0px auto;
-  padding: 50px 0px;
-  border-bottom: 1px ridge;
-  max-height: 400px;
+  padding: 10px 0px;
+} */
+
+html,
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  font-size: 20px;
+/*  Mehrab vai check this, I commented this padding for my design , if it breaks your's let me know. - Rifat */
+/*  padding-top: 40px;*/
+  height: 100vh;
 }
 
-/* -------------------------- */ 
-/*---------NAVBAR------------- */
-/* -------------------------- */ 
+h2 {
+  font-weight: 100;
+}
+
+/* -------------------------- */
+/* --------NAVBAR------------ */
+/* -------------------------- */
 
 .navbar-back {
   background-color: #fff;
 }
 
-.navbar-landing {
-  background-color: #333333;
-  color: #fff;
+/* -------------------------- */
+/*---------SIDEBAR------------- */
+/* -------------------------- */
+
+.sidebar {
+  padding-left: 45px;
+  padding-right: 45.5px;
+  height: 100vh;
 }
 
-/* -------------------------- */ 
+.sidebar-logo {
+  padding: 0;
+
+}
+
+.sidebar-logo img {
+  min-width: 100%;
+  padding-top: 15px;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar li a {
+  color: #999;
+}
+
+.side-nav {
+  padding: 180px 0px 0px 0px;
+  font-size: 12px;
+}
+
+/* .side-links,
+.side-newsletter,
+.side-social {
+  font-size: 50%;
+  margin: auto;
+  width: auto;
+} */
+
+.side-links {
+  padding: 125px 0px 0px 0px;
+}
+
+.side-newsletter {
+  padding: 50px 0px 0px 0px;
+}
+
+.side-social {
+  padding: 15px 0px 45px 0px;
+}
+
+.side-links label {
+  margin: 0;
+}
+
+/* Newsletter Container */
+.input-container {
+  width: auto;
+  text-align: center;
+  border: 1px solid #cccccc;
+  display: inline-block;
+}
+.input-container input:focus,
+.input-container input:active {
+  outline: none;
+}
+.input-container input {
+  width: 80%;
+  border: none;
+  color: #999999;
+  background-color: transparent;
+}
+
+.input-container button {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px;
+  border: 0px;
+  float: right;
+  background-color: #cccccc;
+}
+
+.social {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 45.8px;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.padding-social-icons {
+  padding-left: 2.5px;
+  padding-right: 2.55px;
+}
+
+/* -------------------------- */
 /*---------BOXES------------- */
-/* -------------------------- */ 
+/* -------------------------- */
 
 .first-box {
   background-color: #999;
-  align-items: center;
+  color: #fff;
 }
 
-#inside-first-box {
-  width: auto;
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  color: white;
+.first-box button {
+  background-color: #999;
+  border: solid 1px #ffffff;
+  color: #fff;
+  font-size: 50%;
 }
 
 .second-box {
   background-color: #c8a985;
-  height: 151px;
+  height: 50%;
+  width: 100%;
+  color: #fff;
 }
 
-#inside-second-box {
-
+#inside-second-box button {
+  border: solid 1px #ffffff;
+  color: #fff;
+  background-color: #c8a985;
+  font-size: 50%;
 }
 
 .third-box {
   background-color: #f0e3cc;
+  height: 50%;
+  
+  color: #fff;
+}
+
+#inside-third-box button {
+  border: solid 1px #ffffff;
+  color: #fff;
+  background-color: #f0e3cc;
+  font-size: 50%;
 }
 
 .fourth-box {
   background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
 }
 
 .fifth-box {
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
 }
 
 .sixth-box {
   background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
 }
 
+.fourth-box h2,
+.fifth-box h2,
+.sixth-box h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /* --------------------------- */
 /* ----------FOOTER----------- */
 /* --------------------------- */
-
-.footer {
-  font-size: 80%;
-}
-
-#foot-links {
-  display: flex;
-  justify-content: center;
-}
 
 .list-unstyled li {
   display: inline-block;
@@ -105,38 +228,58 @@ body {
 }
 
 
-/* landing page mobile */
+/* -------------------------------- */
+/* MOBILE LANDING PAGE & CAROUSEL   */
+/* -------------------------------- */
 
+/* navbar black */
+
+.navbar-landing {
+  background-color: #333333;
+  color: #fff;
+}
+
+/*landing page container */
 .full-body {
     background-color: #333333;
+    width: auto;
+    height: 100vh;
 }
 
-.hero-text {
-    color: #fff;
-}
+/*landing page hero box*/
 
 .hero-box {
-/*
-    height: 128px;
-    width: 217px;
-*/
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 14%;
+    height: 80%;
+    width: auto;
     text-align: center;
-    padding: 277px 51.5px 200px 51.5px;
-/*
-    left: 51.5px;
-    top: 277px;
-    border-radius: 0px;
-*/
+    padding: 45% 10% 45% 10%;
+  
 }
+
+.hero-box h1 {
+    margin-top: 25%;
+    margin-bottom: 10%;
+    font-size: 150%;
+    line-height: 120%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+/*landing page carousel*/
 
 .carousel-indicators li {
     position: relative;
     flex: 0 1 auto;
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     margin-right: 3px;
     margin-left: 3px;
+    margin-bottom: 20px;
     text-indent: -999px;
     background-color: #fff;
 }
@@ -150,5 +293,13 @@ body {
 
 .btn-outline-primary.btn-landing {
   color: #fff;
+  margin-top: 2%;
+  font-weight: 400;
+  line-height: 90%;
+  font-size: 80%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   border: 1px solid #fff;
 }
+
+/*carousel landing page ends here*/
