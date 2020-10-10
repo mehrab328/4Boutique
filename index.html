@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 
@@ -20,21 +21,21 @@
     <div id="myNav" class="overlay">
         <div class="container-fluid">
             <div class="row mobile-header">
-                <div class="col-3 col-sm-4 no-gutters">
+                <div class="col-3 col-sm-4 no-gutters align-baseline">
                     <a href="javascript:void(0)" style="cursor:pointer; padding-top: 4px; color: #C8A985;" class="closebtn" onclick="closeNav()">
                         <img src="resources/img/close-btn.svg" alt="">    
                     </a>
                     <img src="resources/img/logo-beige.svg" alt="logo" class="d-none d-sm-inline" style="padding-left: 10px;">
                 </div>
-                <div class="col-6 col-sm-5 no-gutters">
+                <div class="col-6 col-sm-5 no-gutters align-baseline">
                     <img src="resources/img/logo-beige.svg" alt="logo" class="d-block d-sm-none rounded mx-auto">
                 </div>
-                <div class="col-3 d-none d-sm-block no-gutters text-right">
+                <div class="col-3 d-none d-sm-block no-gutters text-right align-baseline">
                     <div class="icon-btn"><a href="#"><img src="resources/img/search-btn.svg" alt=""></a></div>
                     <div class="icon-btn"><a href="#"><img src="resources/img/heart-btn.svg" alt=""></a></div>
                     <div class="icon-btn"><a href="#"><img src="resources/img/shoppingbag-btn.svg" alt=""></a></div>                             
                 </div>
-                <div class="col-3 d-block d-sm-none no-gutters text-right">
+                <div class="col-3 d-block d-sm-none no-gutters text-right align-baseline">
                     <div class="icon-btn"><a href="#"><img src="resources/img/search-btn.svg" alt=""></a></div>
                 </div>
             </div>
@@ -101,22 +102,26 @@
         </div>
     </div>
 
-
-
-
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="container">
-            <div class="col-3">
-                <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
-                <span><i class="fa fa-search fa-lg"></i></span>
+    <nav class="navbar navbar-back fixed-top mobile-header d-xl-none">
+        <div class="container-fluid d-xl-none">
+            <div class="col-3 col-sm-4 no-gutters">
+                <a href="javascript:void(0)" style="cursor:pointer;" onclick="openNav()">
+                    <img src="resources/img/icon-bars-black.svg" alt="">    
+                </a>
+                <img src="resources/img/logo-black.svg" alt="logo" class="d-none d-sm-inline" style="padding-left: 10px;">
+                <div class="icon-btn d-inline d-sm-none" style="padding-left: 5px;"><a href="#"><img src="resources/img/search-btn-black.svg" alt=""></a></div>
             </div>
-            <div class="col-6" style="text-align: center;">
-                <a class="navbar-brand mr-auto" href="#"></a><img src="resources/img/logo.png" height="30"
-                    width="41"></a>
+            <div class="col-6 col-sm-5 no-gutters">
+                <img src="resources/img/logo-black.svg" alt="logo" class="d-block d-sm-none rounded mx-auto" style="padding-top: 5px;">
             </div>
-            <div class="col-3">
-                <span style="margin-right: 5px;"><i class="fa fa-heart-o fa-lg"></i></span>
-                <span><i class="fa fa-shopping-bag fa-lg"></i></span>
+            <div class="col-3 d-none d-sm-inline-block no-gutters text-right">
+                <div class="icon-btn"><a href="#"><img src="resources/img/search-btn-black.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/heart-btn-black.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/shoppingbag-btn-black.svg" alt=""></a></div>                             
+            </div>
+            <div class="col-3 d-block d-sm-none no-gutters text-right">
+                <div class="icon-btn"><a href="#"><img src="resources/img/heart-btn-black.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/shoppingbag-btn-black.svg" alt=""></a></div>
             </div>
         </div>
     </nav>

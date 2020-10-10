@@ -44,12 +44,14 @@
 /* Mobile Header */
 .mobile-header {
   height: 5%;
-  margin: 10px 0px;
+  margin: 0px 0px;
   padding: 20px 0px 0px 0px;
 }
 
 .icon-btn {
   display: inline-block;
+  font-size: 24px;
+  color: #000000;
 }
 
 .icon-btn img {
@@ -153,6 +155,14 @@ label {
   border: 0px;
   float: right;
   background-color: #cccccc;
+}
+
+/* -------------------------- */
+/* --------NAVBAR------------ */
+/* -------------------------- */
+
+.navbar-back {
+  background-color: #fff;
 }
 
 
