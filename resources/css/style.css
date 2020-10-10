@@ -41,6 +41,10 @@
   transition: 0.5s;
 }
 
+.overlay img {
+  vertical-align: top;
+}
+
 /* Mobile Header */
 .mobile-header {
   height: 5%;
