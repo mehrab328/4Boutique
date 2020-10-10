@@ -84,10 +84,6 @@
 
   /* --------- FOOTERS ---------- */
 
-  #hr-line {
-    
-  }
-
   .footers-line {
     flex-direction: row-reverse;
     justify-content: space-between;
