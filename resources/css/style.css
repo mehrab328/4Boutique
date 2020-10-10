@@ -48,6 +48,15 @@
   padding: 20px 0px 0px 0px;
 }
 
+.icon-btn {
+  display: inline-block;
+}
+
+.icon-btn img {
+  width: 20px;
+  height: 20px;
+}
+
 /* Mobile User Tool Section */
 .mobile-user-tool {
   height: 16%;
@@ -61,6 +70,10 @@
   padding: 25px 0 0 0;
   background-color: #333333;
   border: 1px solid #4d4d4d;
+}
+
+.mobile-user-tool p {
+  padding-top: 5px;
 }
 
 /* Navigation links */
@@ -100,7 +113,7 @@ label {
 }
 
 .links {
-  padding: 105px 0px 0px 0px;
+  padding: 80px 0px 0px 0px;
 }
 
 .newsletter {
