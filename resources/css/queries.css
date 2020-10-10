@@ -1,4 +1,120 @@
+
+@media only screen and (max-width: 1440px) {
+
+  body {
+    padding-top: 0;
+  }
+
+  .container {
+    max-width: none;
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  .half-row {
+    padding-right: 0;
+    padding-left: 31px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .first-box h2 {
+    font-size: 28px;
+  }
+
+  .first-box {
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #inside-first-box {
+    width: 63%;
+  }
+
+  .second-box {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+
+  #inside-second-box {
+    width: 43.75%;
+    margin-left: 22px;
+  }
+
+  .third-box {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+  }
+
+  #inside-third-box {
+    width: 43.75%;
+    margin-right: 18px;
+  }
+
+  .fourth-box {
+    height: 340px;
+    margin: 30px 30px 30px 0;
+  }
+
+  .fifth-box {
+    height: 340px;
+    margin: 30px 30px 30px 0;
+  }
+
+  .sixth-box {
+    height: 340px;
+    margin: 30px 0 30px 0;
+  }
+
+  .sixth-box h2 {
+    width: 80%;
+  }
+
+  /* --------- FOOTERS ---------- */
+
+  #hr-line {
+    display: none;
+  }
+
+  .footers-line {
+    display: none;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .list-unstyled li a {
+    font-size: 50%;
+    justify-content: flex-end;
+  }
+
+  .copyright {
+    font-size: 50%;
+    justify-content: flex-start;
+  }
+  
+
+}
+
+
+
+
 @media only screen and (max-width: 1024px) {
+
+  body {
+    padding-top: 0;
+  }
 
   .container {
     max-width: none;
@@ -80,6 +196,7 @@
   /* --------- FOOTERS ---------- */
 
   #hr-line {
+    display: block;
     margin: 0;
   }
 
@@ -106,16 +223,16 @@
 
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+
+  body {
+    padding-top: 0;
+  }
 
   .container {
     max-width: none;
     width: 100%;
     padding: 0 0;
-  }
-
-  body {
-    padding-top: 0;
   }
 
   .half-row {
@@ -194,6 +311,7 @@
   /* --------- FOOTERS ---------- */
 
   #hr-line {
+    display: block;
     margin: 12px 0 10px 0;
   }
 
@@ -225,14 +343,14 @@
 
 @media only screen and (max-width: 575px) {
 
+  body {
+    padding-top: 13px;
+  }
+
   .container {
     max-width: none;
     width: 100%;
     padding: 0 0;
-  }
-
-  body {
-    padding-top: 13px;
   }
 
   /* --------- BOXES ---------- */

@@ -17,15 +17,14 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-back navbar-expand-sm fixed-top d-xl-none">
+    <nav class="navbar navbar-back navbar-expand-sm fixed-top d-lg-none">
         <div class="container no-padding">
             <div class="col-3" style="display: flex; justify-content: flex-start; padding-left: 0;">
                 <span style="margin-right: 5px;"><i class="fa fa-bars fa-lg"></i></span>
                 <span><i class="fa fa-search fa-lg"></i></span>
             </div>
             <div class="col-6" style="display: inline; text-align: center;">
-                <a class="navbar-brand mr-auto" href="#"></a><img src="resources/img/logo.png" height="30"
+                <a class="navbar-brand mr-auto" href="#"></a><img src="resources/img/logo-black.png" height="30"
                     width="41"></a>
             </div>
             <div class="col-3" style="display: flex; justify-content: flex-end;">
@@ -39,59 +38,99 @@
         Carousel
     </header> -->
 
+    <!-- MAIN CONTAINER -->
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-6 first-box">
-                <div id="inside-first-box">
-                    <h2>GET INTO THE NEW SEASON’S MOOD</h2>
-                    <button>SHOP NOW</button>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 half-row">
-                <div class="second-box">
-                    <div id="inside-second-box">
-                        <h2>THE WEEKEND WONDER</h2>
-                        <button>SHOP MEN</button>
+            <div class="col-12 col-lg-3 no-padding d-none d-lg-block">
+                <!-- SIDEBAR CODE START -->
+                <div class="sidebar">
+                    <div class="container-fluid">
+                        <div class="row side-header">
+                            <div class="col text-center">
+                                <img src="resources/img/logo-black.png" height="25px" width="169.5px" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid side-nav">
+                        <ul>
+                            <li><a href="#" class="home">HOME</a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="#">READY TO WEAR</a></li>
+                            <li><a href="#">WOMEN</a></li>
+                            <li><a href="#">MEN</a></li>
+                            <li><a href="#">DESIGNERS</a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="#">LOOKBOOK</a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="third-box">
-                    <div id="inside-third-box">
-                        <h2>THE BEST AUTUMN BUYS</h2>
-                        <button>SHOP MEN</button>
+
+            </div>
+
+
+            <!-- SIDEBAR CODE ENDS -->
+
+            <div class="col-lg-9 col-12 no-padding">
+                <!-- GRID CODE STARTS -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 first-box">
+                            <div id="inside-first-box">
+                                <h2>GET INTO THE NEW SEASON’S MOOD</h2>
+                                <button>SHOP NOW</button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 half-row">
+                            <div class="second-box">
+                                <div id="inside-second-box">
+                                    <h2>THE WEEKEND WONDER</h2>
+                                    <button>SHOP MEN</button>
+                                </div>
+                            </div>
+
+                            <div class="third-box">
+                                <div id="inside-third-box">
+                                    <h2>THE BEST AUTUMN BUYS</h2>
+                                    <button>SHOP MEN</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm fourth-box">
+                            <h2>SHOP WOMEN’S NEW IN</h2>
+                        </div>
+
+                        <div class="col-12 col-sm fifth-box">
+                            <h2>SHOP MEN’S NEW IN</h2>
+                        </div>
+
+                        <div class="col-12 col-sm sixth-box">
+                            <h2>WANT TO PACK THE CITY ESCAPE</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="row back-to-top">
+                        <div class="col-12 d-block d-sm-none" style="display: flex; text-align: center;">
+                            <span><i class="fa fa-chevron-circle-up" style="margin-right: 5px;"></i></span>
+                            <span>BACK TO TOP</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 col-sm fourth-box">
-                <h2>SHOP WOMEN’S NEW IN</h2>
-            </div>
-
-            <div class="col-12 col-sm fifth-box">
-                <h2>SHOP MEN’S NEW IN</h2>
-            </div>
-
-            <div class="col-12 col-sm sixth-box">
-                <h2>WANT TO PACK THE CITY ESCAPE</h2>
-            </div>
-
-        </div>
-
-        <div class="row back-to-top">
-            <div class="col-12 d-block d-sm-none" style="display: flex; text-align: center;">
-                <span><i class="fa fa-chevron-circle-up" style="margin-right: 5px;"></i></span>
-                <span>BACK TO TOP</span>
+                <!-- GRID CODE ENDS -->
             </div>
         </div>
     </div>
 
-
     <hr id="hr-line" style="border: 1px solid #c8a985; ">
-
-
 
     <footer class="footer">
         <div class="container">
@@ -114,15 +153,14 @@
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
-        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-        crossorigin="anonymous"></script>
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous">
+        </script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-        crossorigin="anonymous"></script>
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
+        </script>
 </body>
-
 
 </html>
