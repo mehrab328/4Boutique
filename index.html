@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-back navbar-expand-sm fixed-top d-lg-none">
+    <nav class="navbar navbar-back navbar-expand-sm fixed-top d-xl-none">
         <div class="container no-padding">
             <div class="col-3" style="display: flex; justify-content: flex-start; padding-left: 0;">
                 <span style="margin-right: 5px;"><i class="fa fa-bars fa-lg"></i></span>
@@ -41,19 +41,19 @@
     <!-- MAIN CONTAINER -->
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-3 no-padding d-none d-lg-block">
+            <div class="col-12 col-xl-3 no-padding d-none d-xl-block">
                 <!-- SIDEBAR CODE START -->
                 <div class="sidebar">
                     <div class="container-fluid">
                         <div class="row side-header">
-                            <div class="col text-center">
-                                <img src="resources/img/logo-black.png" height="25px" width="169.5px" alt="logo">
+                            <div class="col sidebar-logo">
+                                <img src="resources/img/logo-black.png" height="auto" width="169.5px" alt="logo">
                             </div>
                         </div>
                     </div>
                     <div class="container-fluid side-nav">
                         <ul>
-                            <li><a href="#" class="home">HOME</a></li>
+                            <li><a href="#" class="home" style="color: #c8a985;">HOME</a></li>
                             <li>&nbsp;</li>
                             <li><a href="#">READY TO WEAR</a></li>
                             <li><a href="#">WOMEN</a></li>
@@ -67,15 +67,43 @@
                             <li><a href="#">CONTACT</a></li>
                         </ul>
                     </div>
+
+                    <div class="container-fluid side-links">
+                        <label for="language" style="color: #000000; font-size: 10px;">LANGUAGE</label>
+                        <select id="language" style="background-color: transparent; color: #000000; font-size: 10px;">
+                            <option value="english" style="color: #666666;">ENGLISH</option>
+                            <select><br>
+                                <a href="#" style="text-decoration: none; color: #000000; font-size: 10px;">STORE
+                                    LOCATOR</a>
+                    </div>
+                    <div class="container-fluid side-newsletter">
+                        <label for="email" style="color: #000000; font-size: 10px;">NEWSLETTER</label><br>
+                        <div class="input-container">
+                            <input type="text" class="input-field" id="email" placeholder="Email">
+                            <button class="input-button">&rarr;</button>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="padding-social-icons">
+                            <a href="#"><img src="resources/img/icon-facebook.svg" alt="facebook icon"></a>
+                        </div>
+                        <div class="padding-social-icons">
+                            <a href="#"><img src="resources/img/icon-twitter.svg" alt="twitter icon"></a>
+                        </div>
+                        <div class="padding-social-icons">
+                            <a href="#"><img src="resources/img/icon-googleplus.svg" alt="google plus"></a>
+                        </div>
+                        <div class="padding-social-icons">
+                            <a href="#"><img src="resources/img/icon-tumblr.svg" alt="tumblr"></a>
+                        </div>
+                    </div>
                 </div>
-
-
             </div>
 
 
             <!-- SIDEBAR CODE ENDS -->
 
-            <div class="col-lg-9 col-12 no-padding">
+            <div class="col-xl-9 col-12 no-padding">
                 <!-- GRID CODE STARTS -->
                 <div class="container">
                     <div class="row">
@@ -130,9 +158,9 @@
         </div>
     </div>
 
-    <hr id="hr-line" style="border: 1px solid #c8a985; ">
+    <hr class="d-xl-none" id="hr-line" style="border: 1px solid #c8a985; ">
 
-    <footer class="footer">
+    <footer class="footer d-xl-none">
         <div class="container">
             <div class="row footers-line">
                 <div class="align-self-center">

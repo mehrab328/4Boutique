@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1580px) {
 
   body {
     padding-top: 0;
@@ -85,11 +85,10 @@
   /* --------- FOOTERS ---------- */
 
   #hr-line {
-    display: none;
+    
   }
 
   .footers-line {
-    display: none;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
@@ -196,7 +195,6 @@
   /* --------- FOOTERS ---------- */
 
   #hr-line {
-    display: block;
     margin: 0;
   }
 
@@ -311,7 +309,6 @@
   /* --------- FOOTERS ---------- */
 
   #hr-line {
-    display: block;
     margin: 12px 0 10px 0;
   }
 

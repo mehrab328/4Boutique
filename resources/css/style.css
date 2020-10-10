@@ -47,11 +47,93 @@ h2 {
 .sidebar {
   padding-left: 45px;
   padding-right: 45.5px;
+  height: 100vh;
+}
+
+.sidebar-logo {
+  padding: 0;
+
+}
+
+.sidebar-logo img {
+  min-width: 100%;
+  padding-top: 15px;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar li a {
+  color: #999;
 }
 
 .side-nav {
   padding: 180px 0px 0px 0px;
   font-size: 12px;
+}
+
+/* .side-links,
+.side-newsletter,
+.side-social {
+  font-size: 50%;
+  margin: auto;
+  width: auto;
+} */
+
+.side-links {
+  padding: 125px 0px 0px 0px;
+}
+
+.side-newsletter {
+  padding: 50px 0px 0px 0px;
+}
+
+.side-social {
+  padding: 15px 0px 45px 0px;
+}
+
+.side-links label {
+  margin: 0;
+}
+
+/* Newsletter Container */
+.input-container {
+  width: auto;
+  text-align: center;
+  border: 1px solid #cccccc;
+  display: inline-block;
+}
+.input-container input:focus,
+.input-container input:active {
+  outline: none;
+}
+.input-container input {
+  width: 80%;
+  border: none;
+  color: #999999;
+  background-color: transparent;
+}
+
+.input-container button {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px;
+  border: 0px;
+  float: right;
+  background-color: #cccccc;
+}
+
+.social {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 45.8px;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.padding-social-icons {
+  padding-left: 2.5px;
+  padding-right: 2.55px;
 }
 
 /* -------------------------- */
