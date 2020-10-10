@@ -413,6 +413,10 @@
     margin: 0 0 0 0;
   }
 
+  .sixth-box h2 {
+    width: 61%;
+  }
+
   .back-to-top {
     height: 85px;
     display: flex;
@@ -425,6 +429,10 @@
   .footers-line {
     display: block;
     text-align: center;
+  }
+
+  .list-unstyled {
+    margin-bottom: 5px;
   }
 
   .list-unstyled li a {
