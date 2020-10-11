@@ -8,42 +8,52 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 
     <title>4Boutique</title>
 </head>
 
 <body>
-
     <div id="myNav" class="overlay">
-        <div class="container row mobile-header">
-            <div class="col-3">
-                <a href="javascript:void(0)" style="cursor:pointer; color: #C8A985;" class="closebtn" onclick="closeNav()"><i class="fa fa-times fa-lg"></i></a>
-            </div>
-            <div class="col-6">
-                <img src="vendors/img/logo-beige.png" alt="logo">
-            </div>
-            <div class="col-3">
-                <i class="fa fa-search fa-lg"></i>
-            </div>
-        </div>
-        <div class="container row mobile-user-tool">
-            <div class="col-4">
-                <span><i class="fa fa-lock fa-lg"></i></span>
-                <p>ACCOUNT</p>
-            </div>
-            <div class="col-4">
-                <span><i class="fa fa-shopping-bag fa-lg"></i></span>
-                <P>BAG</P>
-            </div>
-            <div class="col-4">
-                <span><i class="fa fa-heart-o fa-lg"></i></span>
-                <P>SAVE</P>
+        <div class="container-fluid mobile-header-overlay">
+            <div class="row">
+                <div class="col-3 col-sm-4 no-gutters">
+                    <a href="javascript:void(0)" style="cursor:pointer; padding-top: 4px;" onclick="closeNav()">
+                        <img src="resources/img/close-btn.svg" alt="">    
+                    </a>
+                    <img src="resources/img/logo-beige.svg" alt="logo" class="d-none d-sm-inline" style="padding-left: 10px;">
+                </div>
+                <div class="col-6 col-sm-5 no-gutters">
+                    <img src="resources/img/logo-beige.svg" alt="logo" class="d-block d-sm-none mx-auto">
+                </div>
+                <div class="col-3 d-none d-sm-block no-gutters text-right">
+                    <div class="icon-btn"><a href="#"><img src="resources/img/search-btn.svg" alt=""></a></div>
+                    <div class="icon-btn"><a href="#"><img src="resources/img/heart-btn.svg" alt=""></a></div>
+                    <div class="icon-btn"><a href="#"><img src="resources/img/shoppingbag-btn.svg" alt=""></a></div>                             
+                </div>
+                <div class="col-3 d-block d-sm-none no-gutters text-right">
+                    <div class="icon-btn"><a href="#"><img src="resources/img/search-btn.svg" alt=""></a></div>
+                </div>
             </div>
         </div>
-        <div class="container nav">
+        <div class="container" style="padding: 4% 0 0;">
+            <div class="row d-sm-none mobile-user-tool">
+                <div class="col-4">
+                    <a href="#"><img src="resources/img/icon-lock.svg" alt="account"></a>
+                    <p>ACCOUNT</p>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="resources/img/icon-shopppingbag-white.svg" alt="cart"></a> 
+                    <P>BAG</P>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="resources/img/icon-heart-white.svg" alt="save"></a>                   
+                    <P>SAVE</P>
+                </div>
+            </div>
+        </div>
+        <div class="container nav text-center" id="nav-links">
             <ul>
                 <li><a href="#" style="color: #C8A985;">HOME</a></li>
                 <li>&nbsp;</li>
@@ -60,48 +70,284 @@
             </ul>
         </div>
         <div class="container links">
-            <label for="language">LANGUAGE</label>
+            <label for="language" style="color: #ffffff">LANGUAGE</label>
             <select id="language" style="background-color: #000000; color: #666666;">
                 <option value="english">ENGLISH</option>
             <select><br>
             <a href="#" style="text-decoration: none; color: #ffffff;">STORE LOCATOR</a>
         </div>
         <div class="container newsletter">
-            <label for="email">NEWSLETTER</label>
+            <label for="email" style="color: #ffffff">NEWSLETTER</label><br>
             <div class="input-container">
                 <input type="text" class="input-field" id="email" placeholder="Email">
                 <button class="input-button">&rarr;</button>
             </div>
         </div>
         <div class="container social">
-            <img src="vendors/img/Icon facebook.png" class="icons-social">
-            <img src="vendors/img/Icon twitter.png" class="icons-social">
-            <img src="vendors/img/Icon google plus.png" class="icons-social">
-            <img src="vendors/img/Icon tumblr.png" class="icons-social">
+            <div class="padding-social-icons">
+                <a href="#"><img src="resources/img/icon-facebook.svg" alt="facebook icon"></a>
+            </div>
+            <div class="padding-social-icons">
+                <a href="#"><img src="resources/img/icon-twitter.svg" alt="twitter icon"></a>
+            </div>
+            <div class="padding-social-icons">
+                <a href="#"><img src="resources/img/icon-googleplus.svg" alt="google plus"></a>
+            </div>
+            <div class="padding-social-icons">
+                <a href="#"><img src="resources/img/icon-tumblr.svg" alt="tumblr"></a>    
+            </div>
         </div>
-
-
     </div>
 
-
-
-
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="container">
-            <div class="col-3">
-                <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
-                <span><i class="fa fa-search fa-lg"></i></span>
+    <nav class="navbar navbar-back fixed-top d-block d-md-none">
+        <div class="container-fluid mobile-header d-xl-none">
+            <div class="col-3 col-sm-4 no-gutters">
+                <a href="javascript:void(0)" style="cursor:pointer;" onclick="openNav()">
+                    <img src="resources/img/icon-bars-white.svg" alt="">    
+                </a>
+                <img src="resources/img/logo-white.svg" alt="logo" class="d-none d-sm-inline" style="padding-left: 10px;">
+                <div class="icon-btn d-inline d-sm-none" style="padding-left: 5px;"><a href="#"><img src="resources/img/search-btn-white.svg" alt=""></a></div>
             </div>
-            <div class="col-6" style="text-align: center;">
-                <a class="navbar-brand mr-auto" href="#"></a><img src="resources/img/logo.png" height="30"
-                    width="41"></a>
+            <div class="col-6 col-sm-5 no-gutters">
+                <img src="resources/img/logo-white.svg" alt="logo" class="d-block d-sm-none mx-auto">
             </div>
-            <div class="col-3">
-                <span style="margin-right: 5px;"><i class="fa fa-heart-o fa-lg"></i></span>
-                <span><i class="fa fa-shopping-bag fa-lg"></i></span>
+            <div class="col-3 d-none d-sm-inline-block no-gutters text-right">
+                <div class="icon-btn"><a href="#"><img src="resources/img/search-btn-white.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/heart-btn-white.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/shoppingbag-btn-white.svg" alt=""></a></div>                             
+            </div>
+            <div class="col-3 d-block d-sm-none no-gutters text-right">
+                <div class="icon-btn"><a href="#"><img src="resources/img/heart-btn-white.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/shoppingbag-btn-white.svg" alt=""></a></div>
             </div>
         </div>
     </nav>
+
+    <nav class="navbar navbar-back fixed-top d-none d-md-block d-xl-none">
+        <div class="container-fluid mobile-header d-xl-none">
+            <div class="col-3 col-sm-4 no-gutters">
+                <a href="javascript:void(0)" style="cursor:pointer;" onclick="openNav()">
+                    <img src="resources/img/icon-bars-black.svg" alt="">    
+                </a>
+                <img src="resources/img/logo-black.svg" alt="logo" class="d-none d-sm-inline" style="padding-left: 10px;">
+                <div class="icon-btn d-inline d-sm-none" style="padding-left: 5px;"><a href="#"><img src="resources/img/search-btn-black.svg" alt=""></a></div>
+            </div>
+            <div class="col-6 col-sm-5 no-gutters">
+                <img src="resources/img/logo-black.svg" alt="logo" class="d-block d-sm-none mx-auto">
+            </div>
+            <div class="col-3 d-none d-sm-inline-block no-gutters text-right">
+                <div class="icon-btn"><a href="#"><img src="resources/img/search-btn-black.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/heart-btn-black.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/shoppingbag-btn-black.svg" alt=""></a></div>                             
+            </div>
+            <div class="col-3 d-block d-sm-none no-gutters text-right">
+                <div class="icon-btn"><a href="#"><img src="resources/img/heart-btn-black.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/shoppingbag-btn-black.svg" alt=""></a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!--    Carousel   -->
+    <header id="hide_carousel">
+        <div class="container full-body">
+          
+          <div class="row justify-content-center hero-box">
+              <div class="col-xs-12 col-sm-12">
+                    <h1 class="hero-text">NEW F/W 2015 COLLECTION</h1>
+                    <p class="d-none d-sm-block">NULLA VITAE ELIT LIBERO, A PHARETRA AUGUE MOLLIS INTERDUM.</p>
+                    <button type="button" class="btn btn-outline-primary btn-landing">SHOP NOW</button>
+                  
+              </div>
+          </div>
+          
+          <div class="row">
+              <div class="col-xs-2 col-sm-2">
+              </div>
+              <div class="col-xs-8 col-sm-8" style="text-align: center">
+                  
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+<!--                          <img class="d-block w-100" src="" alt="First slide" height="500px">-->
+                        </div>
+                        <div class="carousel-item">
+<!--                          <img class="d-block w-100" src="" alt="Second slide" height="500px">-->
+                        </div>
+                        <div class="carousel-item">
+<!--                          <img class="d-block w-100" src="resources/img/caro3.jpeg" alt="Third slide" height="500px">-->
+                        </div>
+                    </div>
+
+                  </div>
+              
+              </div>
+              <div class="col-xs-2 col-sm-2">
+              </div>
+          </div>
+          
+          <div class="row arrow-down">
+              <div class="col-2">
+              </div>
+              <div class="col-8" style="text-align: center">
+                  <a href="#boxes" class="js--scroll-to-next"><img src="resources/img/Icon-arrow-down.svg" alt="Icon arrow down"></a>
+              </div>
+              <div class="col-2">
+              </div>
+          </div>   
+        </div>
+    </header>
+    
+<!--   Carousel landing page ends here -->
+
+    <!-- MAIN CONTAINER -->
+    <div class="container js--section-next">
+        <div class="row">
+            <div class="col-12 col-xl-3 no-gutters d-none d-xl-block">
+                <!-- SIDEBAR CODE START -->
+                <div class="sidebar">
+                    <div class="container-fluid">
+                        <div class="row side-header">
+                            <div class="col sidebar-logo">
+                                <img src="resources/img/logo-black.svg" height="auto" width="169.5px" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid side-nav" id="nav-links">
+                        <ul>
+                            <li><a href="#" style="color: #c8a985;">HOME</a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="#">READY TO WEAR</a></li>
+                            <li><a href="#">WOMEN</a></li>
+                            <li><a href="#">MEN</a></li>
+                            <li><a href="#">DESIGNERS</a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="#">LOOKBOOK</a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="container-fluid side-links">
+                        <label for="language" style="color: #000000">LANGUAGE</label>
+                        <select id="language" style="background-color: transparent; color: #000000;">
+                            <option value="english" style="color: #666666;">ENGLISH</option>
+                        <select><br>
+                        <a href="#" style="text-decoration: none; color: #000000;">STORE LOCATOR</a>
+                    </div>
+                    <div class="container-fluid side-newsletter">
+                        <label for="email" style="color: #000000">NEWSLETTER</label><br>
+                        <div class="input-container">
+                            <input type="text" class="input-field" id="email" placeholder="Email">
+                            <button class="input-button">&rarr;</button>
+                        </div>
+                    </div>
+                    <div class="container-fluid d-flex flex-row  side-social">
+                        <div class="padding-social-icons">
+                            <a href="#"><img src="resources/img/icon-facebook.svg" alt="facebook icon"></a>
+                        </div>
+                        <div class="padding-social-icons">
+                            <a href="#"><img src="resources/img/icon-twitter.svg" alt="twitter icon"></a>
+                        </div>
+                        <div class="padding-social-icons">
+                            <a href="#"><img src="resources/img/icon-googleplus.svg" alt="google plus"></a>
+                        </div>
+                        <div class="padding-social-icons">
+                            <a href="#"><img src="resources/img/icon-tumblr.svg" alt="tumblr"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SIDEBAR CODE ENDS -->
+
+            <div class="col-xl-9 col-12 no-gutters">
+                <!-- GRID CODE STARTS -->
+                <div class="container-box" id="boxes">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 first-box">
+                            <div id="inside-first-box">
+                                <h2>GET INTO THE NEW SEASON’S MOOD</h2>
+                                <button>SHOP NOW</button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 half-row">
+                            <div class="second-box">
+                                <div id="inside-second-box">
+                                    <h2>THE WEEKEND WONDER</h2>
+                                    <button>SHOP MEN</button>
+                                </div>
+                            </div>
+
+                            <div class="third-box">
+                                <div id="inside-third-box">
+                                    <h2>THE BEST AUTUMN BUYS</h2>
+                                    <button>SHOP MEN</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm fourth-box">
+                            <h2>SHOP WOMEN’S NEW IN</h2>
+                        </div>
+
+                        <div class="col-12 col-sm fifth-box">
+                            <h2>SHOP MEN’S NEW IN</h2>
+                        </div>
+
+                        <div class="col-12 col-sm sixth-box">
+                            <h2>WANT TO PACK THE CITY ESCAPE</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="row back-to-top">
+                        <div class="col-12 d-block d-sm-none" style="display: flex; text-align: center;">
+                            <a href="#"><img src="resources/img/icon-up=arrow.svg" style="margin-right: 5px;" alt="back button"></a>
+                            <span style="font-size: 10px; vertical-align: middle;">BACK TO TOP</span>
+                        </div>
+                    </div>
+
+                    <hr class="d-xl-none" id="hr-line" style="border: 1px solid #c8a985;">
+                    <footer class="footer d-xl-none">
+                        <div class="container">
+                            <div class="row footers-line">
+                                <div class="align-self-center">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">FAQS</a></li>
+                                        <li><a href="#">PRIVACY POLICY</a></li>
+                                        <li><a href="#">TERMS & CONDITIONS</a></li>
+                                    </ul>
+                                </div>
+                
+                                <div class="w-100 d-sm-none d-block"></div>
+                
+                                <p class="align-self-center copyright">&copy; 2015 4BOUTIQUE THEME. ALL RIGHTS RESERVED.</p>
+                
+                            </div>
+                        </div>
+                    </footer>
+                    
+                </div>
+                <!-- GRID CODE ENDS -->
+
+            </div>
+        </div>
+    </div>
+
+
 
 
 
@@ -114,6 +360,7 @@
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
         integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
         crossorigin="anonymous"></script>
+    <script src="resources/js/jqscript.js"></script>
     <script src="resources/js/script.js"></script>
 </body>
 

@@ -3,22 +3,72 @@
   padding: 0;
 }
 
-.row-header {
-  margin: 0px auto;
-  padding: 0px 0px;
+html,
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-.row-content {
-  margin: 0px auto;
-  padding: 50px 0px;
-  border-bottom: 1px ridge;
-  min-height: 400px;
+h2 {
+  font-weight: 100;
+}
+
+.row {
+  margin: 0 0 0 0;
+}
+
+button {
+  padding: 2px 4px;
+}
+
+
+/*-----------------------------------------------*/
+/*----------REMOVING BOOTSTRAP DEFAULTS----------*/
+/*-----------------------------------------------*/
+.container {
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 
 
+
+/*-------------------------------------------*/
+/*----------REUSABLE CODE----------*/
+/*-------------------------------------------*/
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/*-------------------------------------------*/
+/*----------Animations----------*/
+/*-------------------------------------------*/
+
+
+#nav-links a {
+  text-decoration: none;
+}
+
+#nav-links a:hover {
+  color: #9f7748e5;
+  transition: 0.2s;
+}
+
+/*-------------------------------------------*/
 /*----------OVERLAY NAVIGATION MENU----------*/
-
+/*-------------------------------------------*/
 .overlay {
   height: 0;
   width: 100%;
@@ -26,78 +76,123 @@
   z-index: 1100;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
   overflow-x: hidden;
   transition: 0.5s;
+}
+
+.overlay img {
+  vertical-align: top;
 }
 
 /* Mobile Header */
 .mobile-header {
   height: 5%;
-  margin: 15px 0px;
+  margin: 0px 0px;
   padding: 0px 0px 0px 0px;
-  text-align: center;
+}
+
+.mobile-header-overlay {
+  height: 5%;
+  margin: 0 0 0 0;
+  padding: 30px;
+}
+
+.icon-btn {
+  display: inline-block;
+  font-size: 24px;
+  color: #000000;
+}
+
+.icon-btn img {
+  width: 20px;
+  height: 20px;
 }
 
 /* Mobile User Tool Section */
 .mobile-user-tool {
   height: 16%;
-  margin: 15px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   text-align: center;
-  color: #E2E2E2;
+  color: #e2e2e2;
 }
 
 .mobile-user-tool div {
-  padding: 30px 0 0 0;
+  padding: 8% 0 0 0;
   background-color: #333333;
-  border: 1px solid #4D4D4D;
+  border: 1px solid #4d4d4d;
 }
 
-.mobile-user-tool i { font-size: 35px;}
 .mobile-user-tool p {
-  font-size: 15px;
-  padding-top: 10px;
+  font-size: 12px;
+  padding: 10px 0 20%;
+  margin: 0 0 0;
 }
-
 
 /* Navigation links */
 .nav,
 .social {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.nav {
+  padding: 40px 0px 0px 0px;
+  font-size: 22px;
 }
 
 .nav li {
   list-style: none;
-  text-align: center;
 }
 
 .nav li a {
   text-decoration: none;
   text-align: center;
   color: #ffffff;
-  display: block;
 }
 
+/* Rest of the Overflow page */
 .links,
-.newsletter {
+.newsletter,
+.social {
+  font-size: 10px;
   margin: auto;
   width: 50%;
-  padding: 10px;
   text-align: center;
 }
 
+label {
+  margin-bottom: 2px;
+}
 
+.links {
+  padding: 80px 0px 0px 0px;
+}
 
-.input-container{
+.newsletter {
+  padding: 40px 0px 0px 0px;
+}
+
+.social {
+  padding: 10px 0px 20px 0px;
+}
+
+.padding-social-icons {
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+}
+
+/* Newsletter Container */
+.input-container {
+  font-size: 11px;
   width: auto;
   text-align: center;
   border: 1px solid #cccccc;
   display: inline-block;
 }
-.input-container input:focus, .input-container input:active {
+.input-container input:focus,
+.input-container input:active {
   outline: none;
 }
 .input-container input {
@@ -115,8 +210,264 @@
   background-color: #cccccc;
 }
 
-.icons-social {
-  width: 28px;
-  height: 28px;
-  text-align: center;
+/* -------------------------- */
+/* --------NAVBAR------------ */
+/* -------------------------- */
+
+.navbar {
+  background-color: transparent;
 }
+
+/* -------------------------------- */
+/* MOBILE LANDING PAGE & CAROUSEL   */
+/* -------------------------------- */
+
+/* navbar black */
+.navbar-landing {
+  background-color: #333333;
+  color: #fff;
+}
+
+/*landing page container */
+.full-body {
+    background-color: #333333;
+    width: auto;
+    height: 100vh;
+}
+
+/*landing page hero box*/
+
+.hero-box {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 14%;
+    height: 80%;
+    width: auto;
+    text-align: center;
+    padding: 45% 10% 45% 10%;
+  
+}
+
+.hero-box h1 {
+    margin-top: 35%;
+    margin-bottom: 10px;
+    font-size: 150%;
+    line-height: 120%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+/*landing page carousel*/
+.carousel-indicators {
+  position: sticky;
+}
+
+.carousel-indicators li {
+    position: relative;
+    flex: 0 1 auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 3px;
+    text-indent: -999px;
+    background-color: #fff;
+}
+
+.carousel-indicators .active {
+  margin: 0px 5px 5px;
+  background-color: #333333;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+}
+
+.btn-outline-primary.btn-landing {
+  color: #fff;
+  margin-top: 2%;
+  font-weight: 400;
+  line-height: 90%;
+  font-size: 80%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+}
+
+/*carousel landing page ends here*/
+
+
+
+
+/* -------------------------- */
+/*---------SIDEBAR------------- */
+/* -------------------------- */
+
+.sidebar {
+  padding-left: 35px;
+  padding-right: 35px;
+  height: 100vh;
+}
+
+.sidebar-logo {
+  padding: 0;
+
+}
+
+.sidebar-logo img {
+  min-width: 100%;
+  padding-top: 45px;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar li a {
+  color: #999;
+}
+
+.side-nav {
+  padding: 180px 0px 0px 0px;
+  font-size: 12px;
+}
+
+.side-links,
+.side-newsletter,
+.side-social {
+  font-size: 10px;
+  margin: 0 0 0 0;
+}
+
+.side-links {
+  padding: 125px 0px 0px 0px;
+}
+
+.side-newsletter {
+  padding: 50px 0px 0px 0px;
+}
+
+.side-social {
+  padding: 15px 0px 45px 0px;
+}
+
+.side-links label {
+  margin: 0;
+}
+
+/* Newsletter Container */
+.input-container {
+  width: auto;
+  text-align: center;
+  border: 1px solid #cccccc;
+  display: inline-block;
+}
+.input-container input:focus,
+.input-container input:active {
+  outline: none;
+}
+.input-container input {
+  width: 80%;
+  border: none;
+  color: #999999;
+  background-color: transparent;
+}
+
+.input-container button {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px;
+  border: 0px;
+  float: right;
+  background-color: #cccccc;
+}
+
+/* -------------------------- */
+/*---------BOXES------------- */
+/* -------------------------- */
+
+.first-box {
+  background-color: #999;
+  color: #fff;
+}
+
+.first-box button {
+  background-color: #999;
+  border: solid 1px #ffffff;
+  color: #fff;
+  font-size: 50%;
+}
+
+.second-box {
+  background-color: #c8a985;
+  height: 50%;
+  width: 100%;
+  color: #fff;
+}
+
+#inside-second-box button {
+  border: solid 1px #ffffff;
+  color: #fff;
+  background-color: #c8a985;
+  font-size: 50%;
+}
+
+.third-box {
+  background-color: #f0e3cc;
+  height: 50%;
+  
+  color: #fff;
+}
+
+#inside-third-box button {
+  border: solid 1px #ffffff;
+  color: #fff;
+  background-color: #f0e3cc;
+  font-size: 50%;
+}
+
+.fourth-box {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.fifth-box {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.sixth-box {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.fourth-box h2,
+.fifth-box h2,
+.sixth-box h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* --------------------------- */
+/* ----------FOOTER----------- */
+/* --------------------------- */
+
+.list-unstyled li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.list-unstyled li a {
+  color: #c8a985;
+}
+
+
