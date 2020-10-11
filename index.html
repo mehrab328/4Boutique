@@ -19,7 +19,7 @@
         <div class="container-fluid mobile-header-overlay">
             <div class="row">
                 <div class="col-3 col-sm-4 no-gutters">
-                    <a href="javascript:void(0)" style="cursor:pointer; padding-top: 4px; color: #C8A985;" class="closebtn" onclick="closeNav()">
+                    <a href="javascript:void(0)" style="cursor:pointer; padding-top: 4px;" onclick="closeNav()">
                         <img src="resources/img/close-btn.svg" alt="">    
                     </a>
                     <img src="resources/img/logo-beige.svg" alt="logo" class="d-none d-sm-inline" style="padding-left: 10px;">
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="container nav text-center">
+        <div class="container nav text-center" id="nav-links">
             <ul>
                 <li><a href="#" style="color: #C8A985;">HOME</a></li>
                 <li>&nbsp;</li>
@@ -99,7 +99,31 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-back fixed-top d-block d-xl-none">
+    <nav class="navbar navbar-back fixed-top d-block d-md-none">
+        <div class="container-fluid mobile-header d-xl-none">
+            <div class="col-3 col-sm-4 no-gutters">
+                <a href="javascript:void(0)" style="cursor:pointer;" onclick="openNav()">
+                    <img src="resources/img/icon-bars-white.svg" alt="">    
+                </a>
+                <img src="resources/img/logo-white.svg" alt="logo" class="d-none d-sm-inline" style="padding-left: 10px;">
+                <div class="icon-btn d-inline d-sm-none" style="padding-left: 5px;"><a href="#"><img src="resources/img/search-btn-white.svg" alt=""></a></div>
+            </div>
+            <div class="col-6 col-sm-5 no-gutters">
+                <img src="resources/img/logo-white.svg" alt="logo" class="d-block d-sm-none mx-auto">
+            </div>
+            <div class="col-3 d-none d-sm-inline-block no-gutters text-right">
+                <div class="icon-btn"><a href="#"><img src="resources/img/search-btn-white.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/heart-btn-white.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/shoppingbag-btn-white.svg" alt=""></a></div>                             
+            </div>
+            <div class="col-3 d-block d-sm-none no-gutters text-right">
+                <div class="icon-btn"><a href="#"><img src="resources/img/heart-btn-white.svg" alt=""></a></div>
+                <div class="icon-btn"><a href="#"><img src="resources/img/shoppingbag-btn-white.svg" alt=""></a></div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-back fixed-top d-none d-md-block d-xl-none">
         <div class="container-fluid mobile-header d-xl-none">
             <div class="col-3 col-sm-4 no-gutters">
                 <a href="javascript:void(0)" style="cursor:pointer;" onclick="openNav()">
@@ -172,7 +196,7 @@
               <div class="col-2">
               </div>
               <div class="col-8" style="text-align: center">
-                  <a href="#" class="js--scroll-to-next"><img src="resources/img/Icon-arrow-down.svg" alt="Icon arrow down"></a>
+                  <a href="#boxes" class="js--scroll-to-next"><img src="resources/img/Icon-arrow-down.svg" alt="Icon arrow down"></a>
               </div>
               <div class="col-2">
               </div>
@@ -195,9 +219,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid side-nav">
+                    <div class="container-fluid side-nav" id="nav-links">
                         <ul>
-                            <li><a href="#" class="home" style="color: #c8a985;">HOME</a></li>
+                            <li><a href="#" style="color: #c8a985;">HOME</a></li>
                             <li>&nbsp;</li>
                             <li><a href="#">READY TO WEAR</a></li>
                             <li><a href="#">WOMEN</a></li>
@@ -213,15 +237,14 @@
                     </div>
 
                     <div class="container-fluid side-links">
-                        <label for="language" style="color: #000000; font-size: 10px;">LANGUAGE</label>
-                        <select id="language" style="background-color: transparent; color: #000000; font-size: 10px;">
+                        <label for="language" style="color: #000000">LANGUAGE</label>
+                        <select id="language" style="background-color: transparent; color: #000000;">
                             <option value="english" style="color: #666666;">ENGLISH</option>
-                        </select><br>
-                                <a href="#" style="text-decoration: none; color: #000000; font-size: 10px;">STORE
-                                    LOCATOR</a>
-                                </div>
+                        <select><br>
+                        <a href="#" style="text-decoration: none; color: #000000;">STORE LOCATOR</a>
+                    </div>
                     <div class="container-fluid side-newsletter">
-                        <label for="email" style="color: #000000; font-size: 10px;">NEWSLETTER</label><br>
+                        <label for="email" style="color: #000000">NEWSLETTER</label><br>
                         <div class="input-container">
                             <input type="text" class="input-field" id="email" placeholder="Email">
                             <button class="input-button">&rarr;</button>
@@ -249,7 +272,7 @@
 
             <div class="col-xl-9 col-12 no-gutters">
                 <!-- GRID CODE STARTS -->
-                <div class="container-box">
+                <div class="container-box" id="boxes">
                     <div class="row">
                         <div class="col-12 col-sm-6 first-box">
                             <div id="inside-first-box">

@@ -55,10 +55,15 @@ button {
 /*-------------------------------------------*/
 /*----------Animations----------*/
 /*-------------------------------------------*/
-.grow:hover {
-  transform: scale(2.0);
-  -ms-transform: scale(2.0);
-  -webkit-transform: scale(2.0);
+
+
+#nav-links a {
+  text-decoration: none;
+}
+
+#nav-links a:hover {
+  color: #9f7748e5;
+  transition: 0.2s;
 }
 
 /*-------------------------------------------*/
@@ -326,13 +331,12 @@ label {
   font-size: 12px;
 }
 
-/* .side-links,
+.side-links,
 .side-newsletter,
 .side-social {
-  font-size: 50%;
-  margin: auto;
-  width: auto;
-} */
+  font-size: 10px;
+  margin: 0 0 0 0;
+}
 
 .side-links {
   padding: 125px 0px 0px 0px;
