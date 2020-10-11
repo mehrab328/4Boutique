@@ -282,7 +282,20 @@ label {
   border: 1px solid #fff;
 }
 
-.btn-outline-primary.btn-landing {
+.btn-outline-dark,
+.btn-landing {
+  color:  #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn-outline-dark:hover {
+  color:  #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn-outline-dark.btn-landing {
   color: #fff;
   margin-top: 2%;
   font-weight: 400;
