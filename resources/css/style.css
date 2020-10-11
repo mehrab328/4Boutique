@@ -23,6 +23,10 @@ h2 {
   margin: 0 0 0 0;
 }
 
+button {
+  padding: 2px 4px;
+}
+
 
 /*-----------------------------------------------*/
 /*----------REMOVING BOOTSTRAP DEFAULTS----------*/
@@ -110,13 +114,15 @@ h2 {
 }
 
 .mobile-user-tool div {
-  padding: 25px 0 0 0;
+  padding: 8% 0 0 0;
   background-color: #333333;
   border: 1px solid #4d4d4d;
 }
 
 .mobile-user-tool p {
-  padding-top: 5px;
+  font-size: 12px;
+  padding: 10px 0 20%;
+  margin: 0 0 0;
 }
 
 /* Navigation links */
