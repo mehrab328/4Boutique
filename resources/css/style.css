@@ -282,19 +282,6 @@ label {
   border: 1px solid #fff;
 }
 
-.btn-outline-dark,
-.btn-landing {
-  color:  #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-}
-
-.btn-outline-dark:hover {
-  color:  #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-}
-
 .btn-outline-dark.btn-landing {
   color: #fff;
   margin-top: 2%;
@@ -303,6 +290,19 @@ label {
   font-size: 80%;
   letter-spacing: 1px;
   text-transform: uppercase;
+  border: 1px solid #fff;
+}
+
+.btn-outline-dark,
+.btn-landing {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-outline-dark:hover {
+  background-color: transparent;
+  color: #fff;
   border: 1px solid #fff;
 }
 
@@ -402,11 +402,17 @@ label {
   color: #fff;
 }
 
-.first-box button {
+.btn-box1 {
   background-color: #999;
   border: solid 1px #ffffff;
   color: #fff;
   font-size: 50%;
+}
+
+.btn-box1:hover {
+  border: 1px solid transparent;
+  background-color: #999;
+  color: #fff;
 }
 
 .second-box {
@@ -416,11 +422,17 @@ label {
   color: #fff;
 }
 
-#inside-second-box button {
+.btn-box2 {
   border: solid 1px #ffffff;
   color: #fff;
   background-color: #c8a985;
   font-size: 50%;
+}
+
+.btn-box2:hover {
+  border: 1px solid transparent;
+  background-color: #c8a985;
+  color: #fff;
 }
 
 .third-box {
@@ -430,11 +442,17 @@ label {
   color: #fff;
 }
 
-#inside-third-box button {
+.btn-box3 {
   border: solid 1px #ffffff;
   color: #fff;
   background-color: #f0e3cc;
   font-size: 50%;
+}
+
+.btn-box3:hover {
+  border: 1px solid transparent;
+  background-color: #f0e3cc;
+  color: #fff;
 }
 
 .fourth-box {
@@ -481,6 +499,19 @@ label {
 
 .list-unstyled li a {
   color: #c8a985;
+}
+
+/* --------------------------- */
+/* ----------ANIMATIONS----------- */
+/* --------------------------- */
+
+.first-box h2:hover,
+.second-box h2:hover,
+.third-box h2:hover,
+.fourth-box h2:hover,
+.fifth-box h2:hover,
+.sixth-box h2:hover {
+  transform: scale(1.03);
 }
 
 
