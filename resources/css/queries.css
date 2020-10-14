@@ -29,7 +29,7 @@
   }
 
   #inside-first-box {
-    width: 63%;
+    width: 60%;
   }
 
   .second-box {
@@ -72,6 +72,14 @@
   .sixth-box {
     height: 340px;
     margin: 30px 0px 25px 0;
+  }
+
+  .fourth-box h2 {
+    width: 70%;
+  }
+
+  .fifth-box h2 {
+    width: 60%;
   }
 
   .sixth-box h2 {
@@ -161,7 +169,7 @@
   }
 
   #inside-first-box {
-    width: 52%;
+    width: 70%;
   }
 
   .second-box {
@@ -206,8 +214,16 @@
     margin: 30px 0 30px 0;
   }
 
+  .fourth-box h2 {
+    width: 70%;
+  }
+
+  .fifth-box h2 {
+    width: 70%;
+  }
+
   .sixth-box h2 {
-    width: 80%;
+    width: 75%;
   }
 
   /* --------- FOOTERS ---------- */
@@ -299,7 +315,7 @@
   }
 
   .first-box h2 {
-    font-size: 24px;
+    font-size: 120%;
   }
 
   .first-box {
@@ -309,6 +325,10 @@
     align-items: center;
     text-align: center;
     border: solid 1px #fff;
+  }
+
+  #inside-first-box {
+    width: 80%;
   }
 
   .second-box {
@@ -356,6 +376,14 @@
     height: 284px;
     margin: 0 0 0 0;
     border: solid 1px #fff;
+  }
+
+  .fourth-box h2 {
+    width: 80%;
+  }
+
+  .fifth-box h2 {
+    width: 70%;
   }
 
   .sixth-box h2 {
@@ -484,10 +512,13 @@
     text-align: center;
   }
 
+  #inside-first-box {
+    width: 76%;
+  }
+
   .first-box h2 {
     margin-right: auto;
     margin-left: auto;
-    width: 76%;
     font-size: 24px;
   }
 
@@ -526,8 +557,16 @@
     margin: 0 0 0 0;
   }
 
+  .fourth-box h2 {
+    width: 65%;
+  }
+
+  .fifth-box h2 {
+    width: 55%;
+  }
+
   .sixth-box h2 {
-    width: 61%;
+    width: 62%;
   }
 
   .back-to-top {
